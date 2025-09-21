@@ -550,3 +550,34 @@ profile-photo .img{
   }
   
 }
+@media only screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar li {
+    margin: 15px 0;
+    padding: 0;            /* ✅ remove padding */
+    width: 100%;
+  }
+
+  .navbar li:first-child {
+    margin-left: 0 !important; /* ✅ cancel any left offset on Home */
+    padding-left: 0 !important;
+  }
+
+  .navbar li a {
+    display: block;
+    width: 100%;
+    text-align: center;   /* ✅ perfectly centered text */
+  }
+}
